@@ -40,6 +40,14 @@ app.get("/request", function(req, res){
 	Blog.find({},(err,docs) => res.send(docs))
 });
 
+app.post("/contact", function(req, res){
+	res.redirect("/contact");
+});
+
+app.post("/projects", function(req, res){
+	res.redirect("/projects");
+});
+
 app.post("/", function(req, res){
 	console.log(req.body)
 	let message = {name:req.body.name, email:req.body.email, message:req.body.message};
