@@ -40,9 +40,9 @@ app.get("/request", function(req, res){
 	Blog.find({},(err,docs) => res.send(docs))
 });
 
-app.get('/about', (request, response) => {
-	response.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
-});
+// app.get('/about', (request, response) => {
+// 	response.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+// });
 
 app.post("/", function(req, res){
 	console.log(req.body)
