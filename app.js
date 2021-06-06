@@ -41,7 +41,7 @@ app.get("/request", function(req, res){
 });
 
 app.get('/about', function(req, res) {
-  res.sendFile(path.join(__dirname, 'frontend/public/index.html'), function(err) {
+  res.sendFile(path.join(__dirname, 'frontend/build/index.html'), function(err) {
     if (err) {
       res.status(500).send(err)
     }
@@ -49,7 +49,7 @@ app.get('/about', function(req, res) {
 })
 
 app.get('/projects', function(req, res) {
-  res.sendFile(path.join(__dirname, 'frontend/public/index.html'), function(err) {
+  res.sendFile(path.join(__dirname, 'frontend/build/index.html'), function(err) {
     if (err) {
       res.status(500).send(err)
     }
@@ -57,7 +57,7 @@ app.get('/projects', function(req, res) {
 })
 
 app.get('/blog', function(req, res) {
-  res.sendFile(path.join(__dirname, 'frontend/public/index.html'), function(err) {
+  res.sendFile(path.join(__dirname, 'frontend/build/index.html'), function(err) {
     if (err) {
       res.status(500).send(err)
     }
@@ -65,7 +65,7 @@ app.get('/blog', function(req, res) {
 })
 
 app.get('/contact', function(req, res) {
-  res.sendFile(path.join(__dirname, 'frontend/public/index.html'), function(err) {
+  res.sendFile(path.join(__dirname, 'frontend/build/index.html'), function(err) {
     if (err) {
       res.status(500).send(err)
     }
