@@ -1,6 +1,7 @@
 import Backgroundlayer from "./Backgroundlayer.jsx";
 import Socialmedialinks from "./Socialmedialinks.jsx";
 import Typed from "react-typed";
+import {NavLink} from "react-router-dom";
 
 function Home(){
 
@@ -22,12 +23,12 @@ function Home(){
 					<div className="row" style={{zIndex:3}}>
 						<Socialmedialinks />	
 						<span style={{zIndex:20}}>
-							<form style={{margin:"10px", zIndex:20, display:"inline"}} action="/contact" onSubmit={homeformsubmit}>
+							<NavLink style={{margin:"10px", zIndex:20, display:"inline"}} to="/contact" onSubmit={homeformsubmit}>
 								<button style={{zIndex:20}} className="buttons" type="submit">Contact me</button>							
-							</form>
-							<form style={{margin:"10px", zIndex:20, display:"inline"}} action="/projects" onSubmit={homeformsubmit}>
+							</NavLink>
+							<NavLink style={{margin:"10px", zIndex:20, display:"inline"}} to="/projects" onSubmit={homeformsubmit}>
 								<button className="buttons">My Work</button>
-							</form>	
+							</NavLink>	
 						</span>
 					</div>
 				</div>
