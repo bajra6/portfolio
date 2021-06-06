@@ -3,6 +3,11 @@ import Socialmedialinks from "./Socialmedialinks.jsx";
 import Typed from "react-typed";
 
 function Home(){
+
+	function homeformsubmit(event){
+		event.preventDefault();
+	}
+
 	return (
 		<div className="home" style={{zIndex:5}}>
 			<div className="container-fluid homescreen center">
@@ -17,10 +22,10 @@ function Home(){
 					<div className="row" style={{zIndex:3}}>
 						<Socialmedialinks />	
 						<span style={{zIndex:20}}>
-							<form style={{margin:"10px", zIndex:20, display:"inline"}} action="/contact">
+							<form style={{margin:"10px", zIndex:20, display:"inline"}} action="/contact" onSubmit={homeformsubmit}>
 								<button style={{zIndex:20}} className="buttons" type="submit">Contact me</button>							
 							</form>
-							<form style={{margin:"10px", zIndex:20, display:"inline"}} action="/projects">
+							<form style={{margin:"10px", zIndex:20, display:"inline"}} action="/projects" onSubmit={homeformsubmit}>
 								<button className="buttons">My Work</button>
 							</form>	
 						</span>
