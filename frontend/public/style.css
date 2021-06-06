@@ -1,0 +1,127 @@
+/*      Navbar and globals   */
+
+body{
+  background:black;
+  overflow-x:hidden;
+}
+
+.navbarcss{
+  font-family: 'Press Start 2P', cursive;
+  color:#0f0 !important;
+}
+
+.navbarcustom{
+  /*background-color:black !important;*/
+}
+
+.navbar-toggler{
+  background-color:"0f0" !important;
+}
+
+.bgblack{
+  background-color:black;
+}
+
+.buttons{
+  margin-top:15px;
+  background:transparent;
+  color:#0f0;
+  font-family: 'Press Start 2P', cursive;
+  border: 2px solid #0f0;
+  padding:10px 15px;
+}
+
+/*       Home screen     */
+
+.homescreen{
+  overflow-x:hidden;
+  overflow-y:hidden;
+  /*background: rgba(0, 0, 0, 1);*/
+  color: white;
+  position: absolute;
+  top:0;
+  /*left:0;*/
+  /*z-index:-1;*/
+  height: 100vh;
+}
+
+.center{
+  display:flex;
+  align-items:center;
+}
+
+.homecontent{
+  font-family: 'Press Start 2P', cursive;
+  color:#0f0;
+}
+
+.icons{
+  color:#0f0;
+  font-size: 32px;
+  margin: 10px;
+}
+
+/*     Blog screen  */
+
+.myposts{
+  border-style: double;
+  border-color: #0f0;
+  margin: 24px 0;
+  padding-top: 12px;
+  font-family: 'Press Start 2P', cursive;
+  color:#0f0;
+}
+
+/*.blogscreen{
+  font-family: 'Press Start 2P', cursive;
+  color:#0f0;
+}*/
+
+/*    Projects     */
+
+.theme{
+  font-family: 'Press Start 2P', cursive;
+  color:#0f0;
+  padding-right: 5px;
+}
+
+.project{
+  margin-top:36px;
+}
+
+.weblink{
+  border-style: solid;
+  border-color: #0f0;
+  /*margin: 5px;*/
+  padding:5px;
+}
+
+
+/*  About */
+
+.hidden{
+  visibility:hidden
+}
+
+/*    contact us   */
+
+.forminputs{
+  background:transparent;
+  border: 2px solid #0f0;
+  color:#0f0;
+  margin-top:20px;
+  width:100%;
+}
+
+.contactme{
+  padding: 0 20px
+}
+
+::placeholder{
+  color:#0f0;
+  opacity: 0.6;
+}
+
+#contactmeheading{
+  margin: 15px 0px;
+}
