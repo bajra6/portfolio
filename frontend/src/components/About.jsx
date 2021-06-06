@@ -15,7 +15,7 @@ function About(){
 				<h4 class='theme'>Hi, I am bajra</h4>
 				<Typed  strings={["<h2 style='color:#0f0'>(•_•)<br /></h2>","<h2 style='color:#0f0'>( •_•)>⌐■-■<br /></h2>","<h2 style='color:#0f0'>(⌐■_■)<br/></h2>"]}></Typed>
 				<Typed onComplete={visible} startDelay={3000} typeSpeed={10} strings={[
-					"<p class='theme'>An alien based in Coimbatore, India who has been learning, practicing and implementing a variety of skills over the last two years while specializing mainly on web design and develoment.<br> Looking forward to work on interesting projects with amazing people</p>"
+					"<p class='theme'>An alien based in Coimbatore, India who has been learning, practicing and implementing a variety of skills over the last two years while specializing mainly on web design and development.<br> Looking forward to work on interesting projects with amazing people</p>"
 					]} >
 				</Typed>
 			</div>

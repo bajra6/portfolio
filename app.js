@@ -41,7 +41,19 @@ app.get("/request", function(req, res){
 });
 
 app.get("/about", function (req, res){
-	console.log("about request varthu");
+	res.send(index.html)
+})
+
+app.get("/projects", function (req, res){
+	res.send(index.html)
+})
+
+app.get("/blog", function (req, res){
+	res.send(index.html)
+})
+
+app.get("/contact", function (req, res){
+	res.send(index.html)
 })
 
 app.post("/", function(req, res){
