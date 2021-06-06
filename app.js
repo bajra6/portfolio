@@ -40,37 +40,22 @@ app.get("/request", function(req, res){
 	Blog.find({},(err,docs) => res.send(docs))
 });
 
-app.get('/about', function(req, res) {
-  res.sendFile(path.join(__dirname, 'frontend/build/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
+app.get("/about", (req, res) => {                       
+  res.sendFile(path.resolve(__dirname, "/frontend/build", 'index.html'));                               
+});
 
-app.get('/projects', function(req, res) {
-  res.sendFile(path.join(__dirname, 'frontend/build/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
+app.get("/projects", (req, res) => {                       
+  res.sendFile(path.resolve(__dirname, "/frontend/build", 'index.html'));                               
+});
 
-app.get('/blog', function(req, res) {
-  res.sendFile(path.join(__dirname, 'frontend/build/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
+app.get("/blog", (req, res) => {                       
+  res.sendFile(path.resolve(__dirname, "/frontend/build", 'index.html'));                               
+});
 
-app.get('/contact', function(req, res) {
-  res.sendFile(path.join(__dirname, 'frontend/build/index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
+app.get("/contact", (req, res) => {                       
+  res.sendFile(path.resolve(__dirname, "/frontend/build", 'index.html'));                               
+});
+
 
 app.post("/", function(req, res){
 	console.log(req.body)
