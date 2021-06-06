@@ -40,13 +40,37 @@ app.get("/request", function(req, res){
 	Blog.find({},(err,docs) => res.send(docs))
 });
 
-app.post("/contact", function(req, res){
-	res.redirect("/contact");
-});
+app.get('/about', function(req, res) {
+  res.sendFile(path.join(__dirname, 'frontend/public/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
 
-app.post("/projects", function(req, res){
-	res.redirect("/projects");
-});
+app.get('/projects', function(req, res) {
+  res.sendFile(path.join(__dirname, 'frontend/public/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
+
+app.get('/blog', function(req, res) {
+  res.sendFile(path.join(__dirname, 'frontend/public/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
+
+app.get('/contact', function(req, res) {
+  res.sendFile(path.join(__dirname, 'frontend/public/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
 
 app.post("/", function(req, res){
 	console.log(req.body)
