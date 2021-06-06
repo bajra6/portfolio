@@ -40,21 +40,9 @@ app.get("/request", function(req, res){
 	Blog.find({},(err,docs) => res.send(docs))
 });
 
-app.get("/about", function (req, res){
-	res.send(index.html)
-})
-
-app.get("/projects", function (req, res){
-	res.send(index.html)
-})
-
-app.get("/blog", function (req, res){
-	res.send(index.html)
-})
-
-app.get("/contact", function (req, res){
-	res.send(index.html)
-})
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+});
 
 app.post("/", function(req, res){
 	console.log(req.body)
